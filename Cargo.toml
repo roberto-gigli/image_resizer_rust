@@ -1,0 +1,13 @@
+[package]
+name = "image_resizer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fast_image_resize = "5.1.2"
+image = "0.24.2"            # Assicurati di usare la versione più recente disponibile
+
+[lib]
+name = "image_resizer_lib"
+crate-type = ["cdylib"]
+path = "./src/image_resizer_lib.rs"
